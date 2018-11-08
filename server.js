@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-// const routes = require('./routes/index')
+const routes = require('./routes/index')
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 })
 
 app.use(express.json());
-// app.use('/', routes)
+app.use('/', routes)
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
