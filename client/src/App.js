@@ -25,7 +25,7 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route exact path="/login" component={LogInPage}/>
-            <Route exact path="/ideas" component={IdeaPage}/>
+            <Route exact path="/users/:userId" component={IdeaPage}/>
             <Route path="/" component={HomePage}/>
           </Switch>
           <h6>Below</h6>
