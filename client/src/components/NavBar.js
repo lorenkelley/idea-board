@@ -31,7 +31,6 @@ class NavBar extends Component {
         <Link to="/">Ideas Board</Link>
         <div className="right">
           <Link to="/login">Log-In</Link>
-          <Link to="/ideas">Ideas</Link>
         </div>
         
       </NavBarStyles>
